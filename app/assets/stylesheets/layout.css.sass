@@ -1,0 +1,25 @@
+body
+  background-color: #eee
+  color: #072f44
+#wrapper
+  @include outer-container
+  background-color: #d5eefb
+  height: 100%
+
+article, footer
+  background-color: #aadbf5
+  @include pad(30px)
+
+#about-us
+  background-color: #d5eefb
+  @include span-columns(12)
+
+#pimp-1
+  @include span-columns(6)
+
+#pimp-2
+  @include span-columns(6)
+  @include omega()
+
+footer
+  @include span-columns(12)
