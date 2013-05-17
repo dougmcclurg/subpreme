@@ -5,6 +5,7 @@ gem 'puma'
 gem 'sqlite3'
 gem 'haml'
 gem 'jquery-rails'
+gem 'simple_form'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -15,5 +16,11 @@ group :assets do
   gem 'bourbon'
   gem 'neat'
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :test do
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'shoulda'
 end
 

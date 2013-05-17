@@ -4,6 +4,11 @@
     / %nav
     /   %ul
     /     %li Menu
+    = simple_form_for @user, :url => signup_path do |form|
+      = form.label :email, 'Email'
+      = form.text_field :email
+      = form.submit 'Subscribe'
+
   %section
     %article#pimp-1
       %header
